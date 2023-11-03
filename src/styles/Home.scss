@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap%27);");
 
-$homeFont: "Lato", sans-serif;
+$homeFont: "Rubik", sans-serif;
 $headerHeight: 10vh;
 $contentHeight: 90vh;
 $footerHeight: 20vh;
@@ -17,7 +17,6 @@ $footerHeight: 20vh;
 
   grid-row-gap: 5px;
   .header-div-home {
-    border: solid yellow;
     height: $headerHeight;
   }
 
@@ -26,3 +25,199 @@ $footerHeight: 20vh;
     height: $contentHeight;
   }
 }
+
+
+/*Footer home page*/
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #5c5b69;
+  color: rgb(255, 255, 255);
+
+  .footer-top {
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    .left-side-top {
+      font-size: 40px;
+      display: flex;
+      align-items: center;
+      flex: 1 1 0;
+      margin: auto;
+      .left-side-item {
+        margin-top: 5px;
+        margin-left: 5px;
+      }
+    }
+  }
+
+  .divisory-line {
+    border-top: solid white;
+    width: 80%;
+    margin: auto;
+  }
+
+  .footer-bottom {
+    margin-top: 10px;
+    flex: 1 1 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    .icons-footer-list {
+      display: flex;
+      border-radius: 2%;
+      background-color: white;
+      list-style: none;
+
+      justify-content: center;
+
+      li {
+        margin-right: 20px;
+        margin-left: 20px;
+      }
+    }
+  }
+}
+
+/*---------------------------*/
+/*Developers list style*/
+.developers-div {
+  flex: 1 1 0;
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  strong {
+    font-size: 17px;
+  }
+
+  .developer-list {
+    flex: 1 1 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    li {
+      height: 10vh;
+      flex: 1 1 0;
+      display: flex;
+      justify-content: center;
+      img {
+        border: white;
+        margin-right: 10px;
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+      }
+    }
+    .developer-list-item {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-top: 10px;
+      strong {
+        flex: 1 1 0;
+        span {
+          opacity: 0.6;
+          a {
+            color: white;
+            text-decoration: underline;
+          }
+        }
+      }
+
+      button {
+        border: none;
+        color: black;
+        margin-top: 4px;
+        min-height: 30px;
+        max-height: 50px;
+        width: 120px;
+        font-size: 18px;
+        border-radius: 10px;
+      }
+    }
+    a {
+      flex: 1 1 0;
+      text-decoration: none;
+      color: black;
+    }
+  }
+}
+/*-------------------------------------------*/
+
+
+/*Content home scss-------------------*/
+
+.flex-container-content{
+  
+  display: flex;
+  height: 100%;
+  
+  div{
+      flex: 1 1 0;
+     
+  }
+
+  .img-container{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img{
+          
+          width: 530px;
+          height: 512px;
+          border-radius: 100%;
+          border: solid black;
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      }
+
+  }
+  .info-container{
+    display: flex;
+    flex-direction: column;
+
+
+    .my-contentH1{
+      margin-top: 20%;
+      color: white;
+     
+  
+  
+    }
+    .my-contentP{
+      color: black;
+      margin-left: 10%;
+  
+    }
+    
+  }
+
+
+
+}
+
+/*-------------------------------------*/
+
+/*---------------TskManagerNavbar----------------------*/
+
+.navbar-containerU{
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: end;
+
+  button{
+    background-color: #807F94;
+    color: white;
+    margin-right: 5px;
+    height: 50px;
+    width: 160px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 15px ;
+    border: none;
+  }
+
+}
+
+
